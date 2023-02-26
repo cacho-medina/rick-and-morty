@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Patrick+Hand&display=swap");
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(201, 213, 213);
+    color: black;
+    border-radius: 5px;
+    margin: 3rem auto;
+    width: 28rem;
+    height: 33rem;
+    font-size: 1.2rem;
+}
+.input {
+    width: 50%;
+    height: 2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+}
+.username {
+    color: slategrey;
+    font-family: "Gloria Hallelujah", cursive;
+}
+.password {
+    font-family: "Gloria Hallelujah", cursive;
+    color: slategrey;
+    margin-top: 2.5rem;
+}
+.danger {
+    font-family: "Gloria Hallelujah", cursive;
+    color: red;
+    font-size: 0.8rem;
+}
+.loginBtn {
+    margin-top: 2.5rem;
+    background-color: slateblue;
+    padding: 10px;
+    border-radius: 5px;
+    color: azure;
+    border: none;
+    transition: all 0.8s ease-in-out;
+}
+.loginBtn:hover {
+    cursor: pointer;
+    background-color: azure;
+    color: slateblue;
+}

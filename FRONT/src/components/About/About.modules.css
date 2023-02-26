@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Patrick+Hand&display=swap");
+.about_section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px 0;
+}
+.about {
+    font-family: "Gloria Hallelujah", cursive;
+}
+.profile__img {
+    width: 250px;
+    border-radius: 5px;
+}

@@ -1,0 +1,26 @@
+.details {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+.homeBtn {
+    background-color: azure;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.6s ease;
+    font-family: "Patrick Hand", cursive;
+    font-size: 1.2rem;
+}
+.homeBtn:hover {
+    background: none;
+    cursor: pointer;
+}
+.homeLink {
+    text-decoration: none;
+    color: slategray;
+    font-weight: 600;
+}
+.homeLink:hover {
+    color: white;
+}

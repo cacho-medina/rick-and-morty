@@ -1,0 +1,42 @@
+.card {
+    cursor: progress;
+    margin: 20px auto;
+    width: 400px;
+    background-color: azure;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+}
+.card:hover {
+    box-shadow: rgba(30, 215, 96, 0.4) 0px 0px 0px 3px,
+        rgba(30, 215, 96, 0.3) 0px 0px 0px 6px,
+        rgba(30, 215, 96, 0.2) 0px 0px 0px 9px,
+        rgba(30, 215, 96, 0.1) 0px 0px 0px 12px,
+        rgba(30, 215, 96, 0.05) 0px 0px 0px 15px;
+}
+.closeBtn {
+    align-self: end;
+    padding: 10px;
+    color: #000;
+    font-weight: 700;
+    border-top-right-radius: 10px;
+    border: none;
+    background: none;
+    transition: all 0.5s;
+}
+.closeBtn:hover {
+    transform: scale(1.2);
+    rotate: 180deg;
+    cursor: pointer;
+}
+.cardImg {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+        rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+.subtext {
+    color: rgb(116, 113, 113);
+}
