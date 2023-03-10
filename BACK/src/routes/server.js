@@ -1,10 +1,22 @@
-const http = require("http");
+const express = require("express");
 const getCharById = require("../controllers/getCharById");
 const getCharDetail = require("../controllers/getCharDetail");
 
-http.createServer((req, res) => {
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    let id = req.url.split("/").at(-1);
-    if (req.url.includes("onsearch")) getCharById(res, id);
-    if (req.url.includes("detail")) getCharDetail(res, id);
-}).listen(3001, "localhost");
+const app = express();
+app.listen(3000);
+app.use(bodyParser.urlencoded({ extended: true, limit: "50mb" }));
+app.use(bodyParser.json({ limit: "50mb" }));
+
+app.get("/rickandmorty/character/:id", (req, res) => {
+    let { id } = req.params;
+    getCharById(res, Number(id));
+});
+app.get("/rickandmorty/detail/:detailId", (req, res) => {
+    let { id } = req.params;
+    getCharDetail(res, Number(id));
+});
+
+const fav = [];
+app.get("rickandmorty/fav", (req, res) => {});
+app.delete("rickandmorty/fav", (req, res) => {});
+app.post("rickandmorty/fav/:id", (req, res) => {});

@@ -11,14 +11,10 @@ let getCharById = (res, id) => {
                 gender: data.gender,
                 species: data.species,
             };
-            res.writeHead(200, { "Content-Type": "application/json" }).end(
-                JSON.stringify(character)
-            );
+            res.status(200).json(character);
         })
         .catch((err) =>
-            res
-                .writeHead(500, { "Content-Type": "text/plain" })
-                .end(`El personaje ${id} no existe mi raid`)
+            res.status(500).send(`El personaje ${id} no existe mi raid`)
         );
 };
 
